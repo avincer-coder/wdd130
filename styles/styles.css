@@ -29,15 +29,16 @@ main{
     max-width: 840px;
 }
 
-aside{
+aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(173, 145, 145, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #eee;
+    color: #333;
     text-align: center;
 }
+
 
 aside img{
     width: 200px;
