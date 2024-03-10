@@ -1,0 +1,71 @@
+
+.fount-normal-text{
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fount-title-text{
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    max-width: 960px;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #14213d;
+    --accent1-color: #ffbb00;
+    --accent2-color: #FFFFFF;
+  
+    --heading-font: 'Croissant One', serif;
+    --paragraph-font: 'Playfair Display', serif;
+  
+    --nav-background-color: #000000;
+    --nav-link-color: #ffbb00;
+    --nav-hover-link-color: #000000;
+    --nav-hover-background-color: #ffbb00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+  
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+  
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+  
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+  
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+  
