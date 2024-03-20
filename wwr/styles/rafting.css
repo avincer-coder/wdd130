@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #14213d;
+    --accent1-color: #ffbb00;
+    --accent2-color: #FFFFFF;
+  
+    --heading-font: 'Croissant One', serif;
+    --paragraph-font: 'Playfair Display', serif;
+  
+    --nav-background-color: #000000;
+    --nav-link-color: #ffbb00;
+    --nav-hover-link-color: #000000;
+    --nav-hover-background-color: #ffbb00;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+}
+  
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+  
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+  
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.hero{
+    position: relative;
+}
+
+.hero>img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    position: absolute;
+    text-align: justify;
+    background-color: rgba(251, 251, 251, 0.5);
+    top: -3px;
+    left: 416px;
+    padding: 5px 30px;
+}
+
+article{
+    width: 950px;
+    display: block;
+    position: absolute;
+    background-color: rgba(3, 50, 166, 0.5);
+    top: 137px;
+    left: 100px;
+    padding: 20px;
+}
+
+.happy-image{
+    float: right;
+}
