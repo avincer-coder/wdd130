@@ -111,4 +111,8 @@ header, footer, .grid {
     display: grid;
     align-items: center;
 }
-  
+
+h2{
+    background-color: rgba(109, 161, 194, 0.714);
+    padding: 2px 4px;
+}
