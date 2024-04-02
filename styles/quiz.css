@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+    /* border: 2px solid blue; */
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    display: flex;
+}
+
+span, h1{
+    color: #2b01b3;
+}
+
+span{
+    font-weight: 800;
+    font-size: large;
+}
+
+.margin-example{
+    background-color: #333333;
+    color: white;
+    height: 40px;
+    padding-left: 20px;
+    align-items: center;
+    margin: 0px 30px;
+    font-size: x-small;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EEEEEE;
+    padding: 30px 20px;
+    height: 100%;
+    border-radius: 6px;
+}
+
+input[type="submit"] {
+    background-color: #2b01b3;
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    height: 50px;
+    font-size: medium;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #3a07e2;
+}
+
+/* Quitar flechas del input number */
+input[type="number"]::-webkit-outer-spin-button,input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="text"], input[type="number"], select{
+    height: 35px;
+}
+
+img{
+    width: 30px;
+}
+
+section{
+    display: flex;
+    margin: 15px 20px;
+}
