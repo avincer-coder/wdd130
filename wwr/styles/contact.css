@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #14213d;
+    --accent1-color: #ffbb00;
+    --accent2-color: #FFFFFF;
+  
+    --heading-font: 'Croissant One', serif;
+    --paragraph-font: 'Playfair Display', serif;
+  
+    --nav-background-color: #000000;
+    --nav-link-color: #ffbb00;
+    --nav-hover-link-color: #000000;
+    --nav-hover-background-color: #ffbb00;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    text-align: right;
+    grid-column-start: 3;
+}
+  
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+  
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+  
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+header{
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1500px;
+    grid-gap: 100px;
+    background-color: var(--primary-color);
+    height: 200px; /* Yo le meti height para que se paresca al layout pero no viene en instrucciones */
+}
+
+.imglogo{
+    margin: 0 0.25rem 0 1rem;
+	/* width: 190px; estaba en 64px, se lo quite para que sea como en el layout PERO DEPORSI NO LO LLEVA EN LAS INSTRUCCIONES*/
+    grid-column-start: 2;
+	height: auto; 
+}
+
+
+
+/* ------------------  GRID  --------------------- */
+figure{
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px solid var(--primary-color);
+    width: 200px;
+}
+figcaption{
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+
+/* Uso del Grid para el footer */
+footer{
+    margin-top: 15px;
+    border-top: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+
+footer p{
+    grid-column: 3/6;
+}
+
+footer nav{
+    grid-column: 6;
+}
+
+main{
+    display: flex;
+}
+
+article{
+    display: flex;
+}
+
+article img{
+    height: 330px;
+}
+
+iframe{
+    width: 500px;
+    border: 2px solid var(--primary-color);
+}
+
+.section-employee-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.adress-description{
+    width: 500px;
+}
+
+h4{
+    width: 100%;
+    text-align: center;
+}
+
+.submit-button-container{
+    width: 100%;
+    text-align: center;
+}
+
+.submit-button{
+    background-color: var(--nav-background-color);
+    color: var(--accent2-color);
+    border-radius: 4px;
+    font: var(--paragraph-font);
+    cursor: pointer;
+    font-size: small;
+    width: 150px;
+    height: 35px;
+}
+
+.submit-button:hover{
+    color: var(--accent1-color);
+}
