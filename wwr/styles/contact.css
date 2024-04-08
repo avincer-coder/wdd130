@@ -149,7 +149,7 @@ iframe{
     text-align: center;
 }
 
-.submit-button{
+.submit-input{
     background-color: var(--nav-background-color);
     color: var(--accent2-color);
     border-radius: 4px;
@@ -160,6 +160,6 @@ iframe{
     height: 35px;
 }
 
-.submit-button:hover{
+.submit-input:hover{
     color: var(--accent1-color);
 }
