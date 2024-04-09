@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Brave River Rafting</title>
+    <meta name="description" content="Home page of Brave River Rafting, start, index, introducction to web page, General information and welcome page.">
+    <meta name="author" content="Mario Eduardo Garcia Salazar">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img class="imglogo" src="images/logo.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="home-main">
+        <div class="heroe">
+            <img class="home-image" src="images/img-home-page.jpg" alt="image home page">
+            <h1 class="home-h1">Welcome To Our Brave River Rafting Homepage</h1>
+        </div>
+        <form class="home-form" action="submite" method="POST">
+            <h4>Newsletter sign up form</h4>
+            <p>Wish to joing?</p>
+            <p>Don't hesitate!</p>
+            <label for="nombre">Name</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <input type="checkbox" id="aceptar" name="aceptar">
+            <label for="aceptar">Subscribe me to the monthly newsletter 😁.</label><br>
+
+            <h4 class="thanks">Thank You for subscribing!</h4>
+            
+            <div class="home-submit-button-container">
+                <label for="btn-submit">Click to subrscibe!</label><br>
+                <button id="home-btn-submit" class="home-submit-input" type="submit">Send subscribe information</button>
+            </div>
+        </form>
+        <a class="home-trips-link" href="trips.html">Click here to check our  Adventure Trips Web Page!</a>
+        <div class="home-grid">
+            <img class="home-image-grid1" width="500px" src="images/home-image-grid1.webp" alt="home grid image 1">
+            <p class="home-paragraph-grid">The purpose of this web page is to show how we can help you have an enjoyable adventure with us! We offer incredible adventures as well as departments where you can stay and plan your next great move on our river rafting place!</p>
+            <img class="home-image-grid2" width="500px" src="images/home-image-grid2.jpeg" alt="home grid image 2">
+            <p class="home-paragraph-grid">Another purpose that we have is to help people no matter their circumstances to have a great time with their loved ones. To accomplish this goal we also offer unique and marvelous recrational places for you to discover and have an unforgivable life time!</p>
+        </div>
+    </main>
+        
+    <footer>
+        <p>
+            &copy; 2024 Brave River Rafting 🌊 Mario Eduardo Garcia Salazar 
+        </p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+            <img width="50"  src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+            <img width="50" src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+            <img width="50" src="images/instagram.svg" alt="Instagram">
+            </a>
+            <a target="_blank" href="images/home-wireframe.png">HOME WIREFRAME</a>
+        </nav>
+    </footer>
+</body>
+</html>
